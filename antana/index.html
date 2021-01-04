@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Antana</title>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <!--libs-->
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="libs/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-box">
+                    <div class="languages header__top-box--languages">
+                        <div class="languages__item active"><a href="Rusian">Русский</a></div>
+                        <div class="languages__item"><a href="Chine">日本語</a></div>
+                    </div>
+                    <div class="contact header__top-right">
+                        <div class="contact__phone"><a href="tel: +79006505455">+7 900 650 54 55</a></div>
+                        <div class="adaptive-menu">
+                            <div class="lang-min">
+                                <span class="lang-min__initially">Рус</span>
+                                <ul class="lang-min__list">
+                                    <li class="lang-min__item">
+                                        <a href="#">日本語</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact__lk">
+                                <a  href="#">Личный кабинет</a>
+                                <ul class="contact__show">
+                                    <li class="contact__show-item"><a class="contact__show-lk" href="#">Войти</a></li>
+                                    <li class="contact__show-item"><a href="registration.php">Зарегестрироваться</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="container">
+                <div class="header__middle-box">
+                    <div class="logo">
+                        <div class="logo__img"><a href="index.php"><img src="svg/logo.svg" alt=""></a></div>
+                        <div class="logo__subtitle">Консалтинговые услуги для российского и японского бизнеса</div>
+                    </div>
+                    <div class="search">
+                        <form class="search__form">
+                            <input type="text" class="search__value" placeholder="Поиск по сайту">
+                            <input type="submit" class="search__btn"></input>
+                        </form>
+                        <a class="callback__btn" href="tel: +79006505455">Обратный звонок</a>
+                        <div class="menu-min">
+                            <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="124px" height="124px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;" xml:space="preserve">
+                                <g>
+                                    <path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z"/>
+                                    <path d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z"/>
+                                    <path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="about.php">О компании</a></li>
+                        <li class="main-menu__item main-menu__item--has-child">
+                            <a href="#" >Услуги</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item"><a href="#">Подбор партнера</a></li>
+                                <li class="sub-menu__item"><a href="#">Аналитика бизнеса</a></li>
+                                <li class="sub-menu__item"><a href="#">Исследование</a></li>
+                                <li class="sub-menu__item"><a href="#">Оформление документов</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu__item"><a href="archive-articles.php">Статьи</a></li>
+                        <li class="main-menu__item"><a href="#">Кейсы</a></li>
+                        <li class="main-menu__item"><a href="archive-events.php">События</a></li>
+                        <li class="main-menu__item"><a href="archive-partner.php">Каталог компаний</a></li>
+                        <li class="main-menu__item"><a href="recruting.php">Подбор персонала </a></li>
+                        <li class="main-menu__item"><a href="#">FAQ</a></li>
+                        <li class="main-menu__item"><a href="archive-handbk.php">Справочник</a></li>
+                        <li class="main-menu__item"><a href="contacts.php">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="show-menu header__show-menu">
+            <div class="show-menu__box">
+                <div class="show-menu__top">
+                    <div class="show-menu__title">Меню</div>
+                    <div class="show-menu__close"><img src="svg/cancel.svg" alt=""></div>
+                </div>
+                <input type="text" class="show-menu__serch" placeholder="Поиск по сайту">
+                <nav class="min-menu show-menu__min-menu">
+                    <ul class="min-menu__list">
+                        <li class="min-menu__item"><a href="about.php">О компании</a></li>
+                        <li class="min-menu__item min-menu__item--has-child">
+                            <a href="#" >Услуги</a>
+                            <ul class="inside-menu show-menu__inside-menu">
+                                <li class="inside-menu__item"><a href="#">Подбор партнера</a></li>
+                                <li class="inside-menu__item"><a href="#">Аналитика бизнеса</a></li>
+                                <li class="inside-menu__item"><a href="#">Исследование</a></li>
+                                <li class="inside-menu__item"><a href="#">Оформление налоговых документов в Японии</a></li>
+                            </ul>
+                        </li>
+                        <li class="min-menu__item"><a href="archive-articles.php">Статьи</a></li>
+                        <li class="min-menu__item"><a href="#">Кейсы</a></li>
+                        <li class="min-menu__item"><a href="archive-events.php">События</a></li>
+                        <li class="min-menu__item"><a href="archive-partner.php">Каталог компаний</a></li>
+                        <li class="min-menu__item"><a href="recruting.php">Подбор персонала </a></li>
+                        <li class="min-menu__item"><a href="#">FAQ</a></li>
+                        <li class="min-menu__item"><a href="archive-handbk.php">Справочник</a></li>
+                        <li class="min-menu__item"><a href="contacts.php">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="show-menu__bottom">
+                    <div class="show-menu__phone"><a href="tel: +79006505455">+7 900 650 54 55</a></div>
+                    <a class="callback__btn" href="tel: +79006505455">Обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="home">
+        <section class="top-slide">
+            <div class="top-slide__box">
+                <div class="top-slide__item">
+                    <h3 class="top-slide__title">Более 5 лет мы помогаем дружить бизнесу между Россией и Японией<span>Сервисы и услуги, которые позволяют вести дела с Японией проще</span></h3>
+                    <div class="top-slide__img" style="background-image: url(img/top_slide.jpg);">img</div>
+                    <div class="inside-slide top-slide__inside-slide">
+                        <div class="inside-country">
+                            <div class="inside-country__item active">из Японии</div>
+                            <div class="inside-country__item">в Японию</div>
+                        </div>
+                        <div class="inside-slide__box">
+                            <div class="inside-slide__item">
+                                <div class="services" id="horizontal-scroller"  style="overflow:auto">
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/mannschaft.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/mannschaft2.svg" alt=""></div>
+                                        <div class="services__text">Наладим связь</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/lieferwagen.svg" alt=""></div>
+                                        <div class="services__text">Организуем поставки</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/profile.svg" alt=""></div>
+                                        <div class="services__text">Оформим документы</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/freundlich.svg" alt=""></div>
+                                        <div class="services__text">Поддержим языком</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/mannschaft.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="inside-slide__item">
+                                <div class="services"  id="horizontal-scroller2"  style="overflow:auto">
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/mannschaft.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/mannschaft.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/mannschaft.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/mannschaft2.svg" alt=""></div>
+                                        <div class="services__text">Наладим связь</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/freundlich.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/profile.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img"><img src="svg/lieferwagen.svg" alt=""></div>
+                                        <div class="services__text">Найдем поставщика</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-slide__item">
+                    <div class="top__next">
+                        <h3 class="top__next-title">Сервис для подбора бизнес партнера в Японии<span>Более 496 компаний, уже готовы сотрудничать с вами</span></h3>
+                        <div class="top__next-list">
+                            <div class="top__next-item">
+                                <div class="top__next-img"><img src="svg/mannschaft2.svg" alt=""></div>
+                                <div class="top__next-text">Выберите отрасль</div>
+                            </div>
+                            <div class="top__next-item">
+                                <div class="top__next-arrow">sada</div>
+                            </div>
+                            <div class="top__next-item">
+                                <div class="top__next-img"><img src="svg/mannschaft.svg" alt=""></div>
+                                <div class="top__next-text">Подберите  партнера</div>
+                            </div>
+                            <div class="top__next-item">
+                                <div class="top__next-arrow">sad</div>
+                            </div>
+                            <div class="top__next-item">
+                                <div class="top__next-img"><img src="svg/profile.svg" alt=""></div>
+                                <div class="top__next-text">Оформите заявку</div>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="#" class="btn-box__btn">Найти партнера в Японии</a>
+                        </div>
+                    </div>
+                    <div class="top-slide__img" style="background-image: url(img/top_slide2.jpg);">img</div>    
+                </div>
+            </div>
+        </section>
+        <section class="mission">
+            <div class="container">
+                <div class="mission__box">
+                    <h3 class="mission__title">Наша миссия — сделать сотрудничество предпринимателей двух стран простым и понятным</h3>
+                    <div class="mission__subtitle">Япония и Россия - интересные и совершенно разные страны. Несмотря на отличия в традициях, менталитете, обе страны одинаково открыты к взаимному сотрудничеству. Наша компания предоставляет возможность свести на нет возникающие трудности в ведении бизнеса с японскими партнерами.Мы делаем бизнес с Японией проще.</div>
+                </div>
+            </div>
+        </section>
+        <section class="why-we" style="background-image: url(img/why-we__bg.jpg);">
+            <div class="container">
+                <div class="why-we__box">
+                    <h3 class="why-we__title">Почему стоит работать с нами?</h3>
+                    <div class="why-we__list">
+                        <div class="why-we__item">
+                            <div class="why-we__bold">5 лет</div>
+                            <div class="why-we__statick">На рынке консалтинга</div>
+                        </div>
+                        <div class="why-we__item">
+                            <div class="why-we__bold">136</div>
+                            <div class="why-we__statick">Компаний  в базе партнеров</div>
+                        </div>
+                        <div class="why-we__item">
+                            <div class="why-we__bold">425</div>
+                            <div class="why-we__statick">Полезных статей о Японии в блоге</div>
+                        </div>
+                        <div class="why-we__item">
+                            <div class="why-we__bold">48</div>
+                            <div class="why-we__statick">Успешных кейсов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article">
+            <div class="container">
+                <div class="article__flex">
+                    <div class="popular article__popular">
+                        <div class="popular__title-box">
+                            <h3 class="popular__title">Пишем полезные статьи </h3>
+                            <div class="popular__border"></div>
+                            <div class="popular__btn">
+                                <a href="#" class="popular__link">Показать еще</a>
+                            </div>
+                        </div>
+                        <div class="popular__list">
+                            <div class="popular__item">
+                                <div class="popular__img"><img src="img/why1.jpg" alt=""></div>
+                                <a href="#" class="popular__text">Как знакомиться с японским бизнесом</a>
+                                <div class="popular__date">23 января 2019</div>
+                            </div>
+                            <div class="popular__item">
+                                <div class="popular__img"><img src="img/why2.jpg" alt=""></div>
+                                <a href="#" class="popular__text">Сколько стоит открыть ресторан в Японии</a>
+                                <div class="popular__date">10 января 2019</div>
+                            </div>
+                            <div class="popular__item">
+                                <div class="popular__img"><img src="img/why3.jpg" alt=""></div>
+                                <a href="#" class="popular__text">Как найти партнера по бизнесу?</a>
+                                <div class="popular__date">15 января 2019</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-themes article__popular-thames">
+                        <h3 class="popular-themes__title">Популярные темы</h3>
+                        <ul class="popular-themes__list">
+                            <li class="popular-themes__item"><a href="#">Поставщики</a></li>
+                            <li class="popular-themes__item"><a href="#">Бизнес</a></li>
+                            <li class="popular-themes__item"><a href="#">Налоги</a></li>
+                            <li class="popular-themes__item"><a href="#">Инструкция</a></li>
+                            <li class="popular-themes__item"><a href="#">Найти партнера</a></li>
+                        </ul>
+                        <div class="article-right__btn">
+                            <a href="#" class="popular-themes__link">Перейти в раздел статьи</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partner">
+            <div class="container">
+                <div class="partner__box">
+                    <div class="partner__left">
+                        <h3 class="partner__title">Наш сервис подбора партнеров из Японии</h3>
+                        <div class="partner__subtitle">Мы подобрали более тысячи востребованных с нашей точки зрения японских фирм, которые позволят расширить границы вашего бизнеса</div>
+                        <div class="step partner__step">
+                            <div class="step__title">Три простых шага</div>
+                            <div class="step__list">
+                                <div class="step__item">
+                                    <div class="step__img"><img src="svg/step1.svg" alt=""></div>
+                                    <div class="step__text">Задайте параметры</div>
+                                    <div class="step__num">01</div>
+                                </div>
+                                <div class="step__item">
+                                    <div class="step__img"><img src="svg/step2.svg" alt=""></div>
+                                    <div class="step__text">Подберите партнера</div>
+                                    <div class="step__num">02</div>
+                                </div>
+                                <div class="step__item">
+                                    <div class="step__img"><img src="svg/step3.svg" alt=""></div>
+                                    <div class="step__text">Оставьте заявку</div>
+                                    <div class="step__num">03</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="partner__btn">Подобрать партнера</a>
+                    </div>
+                    <div class="partner__right">
+                        <div class="partner__right-img"><img src="img/services1.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forum">
+            <div class="container">
+                <div class="forum__box">
+                    <div class="forum__wrap">
+                        <div class="forum__icon"><img src="svg/forum.svg" alt=""></div>
+                        <h3 class="forum__title">Задавайте любые вопросы на форуме</h3>
+                        <div class="forum__subtitle">Задавайте вопросы на интересующие вас темы. Ищите партнеров и коллег по бизнесу</div>
+                        <div class="forum__btn-box">
+                            <a href="#" class="forum__btn">Читать форум</a>
+                            <a href="#" class="forum__btn">Создать тему</a>
+                        </div>
+                    </div>
+                    <div class="discussions forum__discussions">
+                        <div class="discussions__title">Популярные обсуждения</div>
+                        <ul class="discussions__list">
+                            <li class="discussions__item">
+                                <a href="#">Ищу партнеров для контейнерных поставок запчастей </a>
+                                <span class="discussions__date">Сегодня, 11:30</span>
+                            </li>
+                            <li class="discussions__item">
+                                <a href="#">Про ИП, доставку, чеки</a>
+                                <span class="discussions__date">Сегодня, 15:50</span>
+                            </li>
+                            <li class="discussions__item">
+                                <a href="#">Ищем сбыт в Японию</a>
+                                <span class="discussions__date">Сегодня, 18:20</span>
+                            </li>
+                        </ul>
+                        <a class="discussions__btn" href="#">Посмотреть все</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="registration" style="background-image: url(img/registration_bg.jpg);">
+            <div class="container">
+                <div class="registration__box">
+                    <h3 class="registration__title">Получите полный доступ к&nbspбизнес порталу о Японии</h3>
+                    <div class="registration__subtitle">База статей, документов, компаний, кадров и форум - лучшие инструменты в одном мете для тех, кто ведет или планирует вести дела с Японией</div>
+                    <form action="" class="registration__form">
+                        <input class="registration__email" type="email" placeholder="Введите E-mail">
+                        <input type="submit" class="registration__submit" value="Зарегистрироваться">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="escort">
+            <h3 class="escort__title">Сопровождаем наших клиентов на всем пути нашего  сотрудничества </h3>
+            <div class="escort__subtitle">От первого контакта и знакомства и до закрытия контрактов и финансовых сделок</div>
+            <div class="escort__flex">
+                <div class="escort__box"><img src="img/escort1.jpg" alt=""></div>
+                <div class="escort__box">
+                    <div class="escort__item">
+                        <div class="escort__bold">Консалтинг ВЭД</div>
+                        <ul class="escort__list">
+                            <li class="escort__link"><a href="#">Маркетинговый консалтинг</a></li>
+                            <li class="escort__link"><a href="#">Консалтинг ВЭД</a></li>
+                            <li class="escort__link"><a href="#">Полное (юридическое) сопровождение сделки</a></li>
+                        </ul>
+                        <div class="escort__bold escort__bold--margin">Частным лицам</div>
+                        <ul class="escort__list">
+                            <li class="escort__link"><a href="#">Кадровый консалтинг</a></li>
+                            <li class="escort__link"><a href="#">Поддержка при поступлении в университеты</a></li>
+                            <li class="escort__link"><a href="#">Визовая поддержка</a></li>
+                        </ul>
+                    </div>
+                    <div class="escort__item">
+                        <div class="escort__bold">Сопровождение бизнеса</div>
+                        <ul class="escort__list">
+                            <li class="escort__link"><a href="#">Перевод документов</a></li>
+                            <li class="escort__link"><a href="#">Организация деловых поездок</a></li>
+                            <li class="escort__link"><a href="#">Визовая поддержка</a></li>
+                            <li class="escort__link"><a href="#">Инвестиционный консалтинг</a></li>
+                            <li class="escort__link"><a href="#">Создание компаниии</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="escort__box"><img src="img/escort2jpg.jpg" alt=""></div>
+            </div>
+        </section>
+        <section class="our-project">
+            <div class="container">
+                <div class="our-project__title-box">
+                    <h3 class="our-project__title">Наши проекты</h3>
+                    <div class="our-project__border">border</div>
+                    <a href="#" class="our-project__link">Показать все</a>
+                </div>
+                <div class="project our-project__project">
+                    <div class="project__wrap">
+                        <div class="project__item">
+                            <div class="project__img"><img src="img/project1.jpg" alt=""></div>
+                            <a href="#" class="project__title">Мираторг</a>
+                            <div class="project__industry">Сельское хозяйство</div>
+                            <div class="project__text">Мираторг - системообразующая российская агропромышленная компания, один из крупнейших производителей мяса в России, крупнейший производитель свинины в России.</div>
+                        </div>
+                    </div>
+                    <div class="project__wrap">
+                        <div class="project__item">
+                            <div class="project__img"><img src="img/project2.jpg" alt=""></div>
+                            <a href="#" class="project__title">X5 Retail Group</a>
+                            <div class="project__industry">Ритейл</div>
+                            <div class="project__text">Одна из ведущих российских мультиформатных продуктовых розничных компаний. Управляет магазинами нескольких торговых сетей</div>
+                        </div>
+                    </div>
+                    <div class="project__wrap">
+                        <div class="project__item">
+                            <div class="project__img"><img src="img/project3.jpg" alt=""></div>
+                            <a href="#" class="project__title">Абрау-Дюрсо</a>
+                            <div class="project__industry">Производство</div>
+                            <div class="project__text">Российская компания, специализирующаяся на выпуске шампанского и игристого вина. Располагается в посёлке Абрау-Дюрсо.</div>
+                        </div>
+                    </div>
+                    <div class="project__wrap">
+                        <div class="project__item">
+                            <div class="project__img"><img src="img/project1.jpg" alt=""></div>
+                            <a href="#" class="project__title">Мираторг</a>
+                            <div class="project__industry">Сельское хозяйство</div>
+                            <div class="project__text">Мираторг - системообразующая российская агропромышленная компания, один из крупнейших производителей мяса в России, крупнейший производитель свинины в России.</div>
+                        </div>
+                    </div>
+                    <div class="project__wrap">
+                        <div class="project__item">
+                            <div class="project__img"><img src="img/project2.jpg" alt=""></div>
+                            <a href="#" class="project__title">X5 Retail Group</a>
+                            <div class="project__industry">Ритейл</div>
+                            <div class="project__text">Одна из ведущих российских мультиформатных продуктовых розничных компаний. Управляет магазинами нескольких торговых сетей</div>
+                        </div>
+                    </div>
+                    <div class="project__wrap">
+                        <div class="project__item">
+                            <div class="project__img"><img src="img/project3.jpg" alt=""></div>
+                            <a href="#" class="project__title">Абрау-Дюрсо</a>
+                            <div class="project__industry">Производство</div>
+                            <div class="project__text">Российская компания, специализирующаяся на выпуске шампанского и игристого вина. Располагается в посёлке Абрау-Дюрсо.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quotes" style="background-image: url(img/quotes_bg.jpg);">
+            <div class="container">
+                <div class="quotes__slide">
+                    <div class="quotes__wrap">
+                        <div class="quotes__item">
+                            <div class="quotes__red">一期一会</div>
+                            <h3 class="quotes__title">Одна жизнь - одна встреча</h3>
+                            <div class="quotes__author">Танака Одо</div>
+                        </div>
+                    </div>
+                    <div class="quotes__wrap">
+                        <div class="quotes__item">
+                            <div class="quotes__red">一期一会</div>
+                            <h3 class="quotes__title">Одна жизнь - одна встреча</h3>
+                            <div class="quotes__author">Танака Одо</div>
+                        </div>
+                    </div>
+                    <div class="quotes__wrap">
+                        <div class="quotes__item">
+                            <div class="quotes__red">一期一会</div>
+                            <h3 class="quotes__title">Одна жизнь - одна встреча</h3>
+                            <div class="quotes__author">Танака Одо</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__box">
+                    <div class="news__left">
+                        <h3 class="news__title">Новости</h3>
+                        <div class="news__item">
+                            <div class="news__img"><img src="img/why1.jpg" alt=""></div>
+                            <div class="news__text">
+                                <a href="#" class="news__link">Открытие нового центра в Москве</a>
+                                <span class="news__date">23 января 2019</span>
+                            </div>
+                        </div>
+                        <div class="news__item">
+                            <div class="news__img"><img src="img/why3.jpg" alt=""></div>
+                            <div class="news__text">
+                                <a href="#" class="news__link">Отчет о по выставке «Продэкспо-2019»</a>
+                                <span class="news__date">20 января 2019</span>
+                            </div>
+                        </div>
+                        <div class="news__item">
+                            <div class="news__img"><img src="img/why1.jpg" alt=""></div>
+                            <div class="news__text">
+                                <a href="#" class="news__link">Открытие нового центра в Москве</a>
+                                <span class="news__date">18 января 2019</span>
+                            </div>
+                        </div>
+                        <a href="#" class="news__btn">Показать все</a>
+                    </div>
+                    <div class="directory news__directory">
+                        <div class="directory__left">
+                            <h3 class="directory__title">Справочник документов</h3>
+                            <div class="directory__subtitle">Более 500 полезных документов для работы с Японией</div>
+                            <ul class="directory__list">
+                                <li class="directory__item"><a href="#">Бизнес</a></li>
+                                <li class="directory__item"><a href="#">Налоги</a></li>
+                                <li class="directory__item"><a href="#">Таможня</a></li>
+                            </ul>
+                            <div class="directory__btn">
+                                <a href="#" class="directory__link">Перейти в справочник</a>
+                            </div>
+                        </div>
+                        <div class="directory__right">
+                            <img src="img/directory.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php include('components/connect.php') ?>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__flex footer-top__flex">
+                    <div class="footer__colmn">
+                        <div class="footer__logo">
+                            <img src="svg/logo_footer.svg" alt="">
+                            <div class="soc footer__soc">
+                                <a href="inst" class="soc__item"><img src="svg/inst.svg" alt=""></a>
+                                <a href="vk" class="soc__item"><img src="svg/vk.svg" alt=""></a>
+                                <a href="youtube" class="soc__item"><img src="svg/youtube.svg" alt=""></a>
+                                <a href="facebook" class="soc__item"><img src="svg/facebook.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__colmn ">
+                        <div class="mine">
+                            <ul class=" mine__nav mine__nav--left">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Клиенты</a></li>
+                                <li><a href="#">История компании</a></li>
+                                <li><a href="#">Команда</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__colmn ">
+                        <div class="mine">
+                            <ul class=" mine__nav mine__nav--right">
+                                <li><a href="#">Каталог компаний</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Подбор персонала</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Справочник</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Форум</a></li>
+                                <li><a href="#">Вебинары</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">События</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__colmn">
+                        <div class="comunication">
+                            <a class="comunication__phone" href="tel: +79000000000">+7 900 00-00-000</a>
+                            <a class="comunication__email" href="mailto: info@antana.ru">info@antana.ru</a>
+                            <a class="callback__btn comunication--btn" href="#">Обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__flex footer__flex--bottom">
+                    <div class="footer__colmn">
+                        <div class="footer__copy">© 2019 Antana Consulting <br>  Все права защищены</div>
+                    </div>
+                    <div class="footer__colmn">
+                        <a href="#" target="blank" class="footer__company"><img src="svg/avenuemedia.svg" alt=""></a>
+                        <div class="footer__year">2020</div>
+                    </div>
+                    <div class="footer__colmn">
+                        <a class="footer__polit" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup">
+            <form class="entry">
+                <div class="entry__title">Вход в личный кабинет</div>
+                <div class="entry__box">
+                    <div class="entry__name">E-mail</div>
+                    <input type="email" class="entry__emeil" placeholder="simple@mail.ru">
+                </div>
+                <div class="entry__box">
+                    <div class="entry__name-box">
+                        <div class="entry__name">Пароль</div>
+                        <a href="#" class="entry__forgot">Забыли пароль?</a>
+                    </div>
+                    <input type="password" class="entry__password" placeholder="">
+                </div>
+                <input type="submit" class="entry__btn" value="Войти">
+                <div class="popup__close">×</div>
+            </form>
+            <form class="recovery">
+                <div class="recovery__title">Восстановление пароля</div>
+                <div class="recovery__subtitle">Введите ваш e-mail, зарегистрированный на сайте. Мы вышлем ссылку для восстановления пароля.</div>
+                <input type="email" class="recovery__email" placeholder="simple@mail.ru">
+                <input type="submit" class="recovery__btn" value="Восстановить">
+                <div class="popup__close">×</div>
+            </form>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script type="text/javascript" src="libs/slick/slick.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
