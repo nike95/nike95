@@ -1,0 +1,45 @@
+<?php include('header.php') ?>
+	<main class="main">
+		<div class="page">
+			<div class="container">
+				<?php include('components/breadcrumbs.php') ?>
+				<div class="page__container">
+					<div class="page__content">
+						<div class="handbooks">
+							<h1 class="handbooks__title">Справочник</h1>
+							<div class="search handbooks__search">
+								<form class="search__form">
+									<input type="text" class="search__value" placeholder="Введите наименование документа">
+									<input type="submit" class="search__btn"></input>
+								</form>
+							</div>
+							<div class="handbooks__list">
+								<div class="handbooks__item">
+									<a href="single-handbk.php" class="handbooks__text">Меморандум относительно развития взаимодействия в сферах строительства, жилищно-коммунального хозяйства и городской среды с целью создания «умных городов» между Министерством строительства и жилищно-коммунального хозяйства Российской Федерации и Министерством госземель, инфраструктуры, транспорта и туризма Японии.</a>
+									<a href="" class="handbooks__stick">документы</a>
+								</div>
+								<div class="handbooks__item">
+									<a href="single-handbk.php" class="handbooks__text">Обновленные таможенные правила 2019</a>
+									<a href="" class="handbooks__stick">таможня</a>
+								</div>
+								<div class="handbooks__item">
+									<a href="single-handbk.php" class="handbooks__text">Новые правила оформления виз в Японию</a>
+									<a href="" class="handbooks__stick">документы</a>
+								</div>
+								<div class="handbooks__item">
+									<a href="single-handbk.php" class="handbooks__text">Министерством строительства и жилищно-коммунального хозяйства Российской Федерации и Министерством госземель, инфраструктуры, транспорта и туризма Японии.</a>
+									<a href="" class="handbooks__stick">документы</a>
+								</div>
+							</div>
+						</div>
+						<?php include('components/pagination.php') ?>
+					</div>
+					<?php include('components/sidebar.php') ?>
+				</div>
+			</div>
+			<?php include('components/connect.php') ?>
+		</div>
+	</main>
+<?php include('footer.php') ?>
+
+

@@ -1,0 +1,61 @@
+<?php include('header.php') ?>
+	<main class="main">
+		<div class="page">
+			<div class="container">
+				<div class="page__container page__container--flex">
+					<div class="page__content">
+						<form class="vacancy">
+							<div class="vacancy__title">Менеджер по проадажам</div>
+							<div class="settinglk__box">
+								<div class="input-name">Название вакансии</div>
+								<input type="text" class="settinglk__input" placeholder="Менеджер по продажам">
+							</div>
+							<div class="settinglk__box">
+								<div class="input-name">Страна</div>
+								<div class="vacancy__radio-box">
+									<div class="vacancy__radio">
+										<input name="country" type="radio" class="radio" id="radio1" checked />
+										<label for="radio1">Россия</label>
+									</div>	
+									<div class="vacancy__radio">
+										<input name="country" type="radio" class="radio" id="radio2" />
+										<label for="radio2">Япония</label>
+									</div>
+								</div>
+							</div>
+							<div class="settinglk__box">
+								<div class="input-name">Город</div>
+								<input type="text" class="settinglk__input" placeholder="Санкт-Петербург">
+							</div>
+							<div class="settinglk__box">
+								<div class="input-name">Образование</div>
+								<input type="text" class="settinglk__input" placeholder="Техническое">
+							</div>
+							<div class="settinglk__box">
+								<div class="input-name">Описание</div>
+								<textarea class="companyform__textarea"  placeholder="Напишите описание вакансии"></textarea>
+							</div>
+							<div class="settinglk__box">
+								<div class="input-name">Обязанности</div>
+								<textarea class="companyform__textarea"  placeholder="Напишите обязанности"></textarea>
+							</div>
+							<div class="settinglk__box">
+								<div class="input-name">Требования</div>
+								<textarea class="companyform__textarea"  placeholder="Напишите требования"></textarea>
+							</div>
+							<div class="settinglk__box">
+								<div class="input-name">Условия работы</div>
+								<textarea class="companyform__textarea"  placeholder="Напишите условия работы"></textarea>
+							</div>
+							<div class="vacancy__btn-box">
+								<input type="submit" class="vacancy__btn" value="Сохранить">
+								<a href="#" class="event-info__btn">Вернуться к списку вакансий</a>
+							</div>
+						</form>
+					</div>
+					<?php include('components/sidebar.php') ?>
+				</div>
+			</div>
+		</div>
+	</main>
+<?php include('footer.php') ?>

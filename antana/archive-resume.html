@@ -1,0 +1,48 @@
+<?php include('header.php') ?>
+	<main class="main">
+		<div class="page">
+			<div class="container">
+				<div class="page__container page__container--flex">
+					<div class="page__content">
+						<div class="archive-resume">
+							<div class="archive-resume__title">Мое резюме</div>
+							<form class="archive-resume__form">
+								<div class="archive-resume__box">
+									<div class="input-name">ФИО</div>
+									<input type="name" class="archive-resume__input" placeholder="Андрей Иванович Иванов">
+								</div>
+								<div class="archive-resume__box">
+									<div class="input-name">Дата рождения</div>
+									<input type="text" class="archive-resume__input" placeholder="28.08.1995">
+								</div>
+								<div class="archive-resume__box">
+									<div class="input-name">Город проживания</div>
+									<input type="text" class="archive-resume__input" placeholder="Москва">
+								</div>
+								<div class="archive-resume__box">
+									<div class="input-name">Образование</div>
+									<input type="text" class="archive-resume__input" placeholder="Техническое">
+								</div>
+								<div class="archive-resume__box">
+									<div class="input-name">Какими языками владеете?</div>
+									<input type="text" class="archive-resume__input" placeholder="Русский, Японский, Английский, Китайский">
+								</div>
+								<div class="archive-resume__box">
+									<div class="input-name">О нас</div>
+									<textarea name="" class="archive-resume__textarea" placeholder="Напишите здесь то, что считаете нужным сообщеть о себе"></textarea>
+								</div>
+								<div class="archive-resume__box">
+									<div class="input-name">Контактный номер телефона</div>
+									<input type="phone" class="archive-resume__input" placeholder="+7 900 00-00-00">
+								</div>
+								<input type="submit" value="Сохранить резюме" class="archive-resume__btn">
+							</form>
+						</div>
+					</div>
+					<?php include('components/sidebar.php') ?>
+				</div>
+			</div>
+			<?php include('components/connect.php') ?>
+		</div>
+	</main>
+<?php include('footer.php') ?>
