@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Tritium</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Scripts -->
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__flex">
+                    <nav class="menu-top">
+                        <ul class="menu-top__box">
+                            <li class="menu-top__item active"><a href="404.html">Для дома</a></li>
+                            <li class="menu-top__item"><a href="business.html">Для бизнеса</a></li>
+                            <li class="menu-top__item"><a href="wifi-business.html">Городской WiFi</a></li>
+                        </ul>
+                    </nav>
+                    <div class="links-top">
+                        <a href="tel: +74923256929" class="links-top__item links-top__item--phone">+7 (49232) 5-69-29</a>
+                        <a href="#" class="links-top__item links-top__item--pay">Оплатить</a>
+                        <a href="#" class="links-top__item links-top__item--lk">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__flex">
+                    <a class="header__logo" href="index.html"><img src="svg/logo-black.svg" alt="logo"></a>
+                    <nav class="menu-bottom">
+                        <ul class="menu-bottom__box">
+                            <li class="menu-bottom__item"><a href="archive-stocks.html">Акции</a></li>
+                            <li class="menu-bottom__item"><a href="premium.html">Почему мы?</a></li>
+                            <li class="menu-bottom__item"><a href="archive-news.html">Новости</a></li>
+                            <li class="menu-bottom__item menu-bottom__item--haschild">
+                                <a href="#">Помощь</a>
+                                <ul class="menu-show">
+                                    <li class="menu-show__item"><a href="support.html">Поддержка</a></li>
+                                    <li class="menu-show__item"><a href="document.html">Документы</a></li>
+                                    <li class="menu-show__item"><a href="services.html">Сервисы</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item"><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="burger">Меню</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="min-menu">
+        <div class="min-menu__flex">
+            <div class="min-menu__title">Меню</div>
+            <div class="min-menu__close">×</div>
+        </div>
+        <div class="min-menu__wrap">
+            <ul class="menu-top__box">
+                <li class="menu-top__item active"><a href="404.html">Для дома</a></li>
+                <li class="menu-top__item"><a href="business.html">Для бизнеса</a></li>
+                <li class="menu-top__item"><a href="wifi-business.html">WiFi</a></li>
+            </ul>
+            <ul class="menu-bottom__box">
+                <li class="menu-bottom__item"><a href="archive-stocks.html">Акции</a></li>
+                <li class="menu-bottom__item"><a href="premium.html">Почему мы?</a></li>
+                <li class="menu-bottom__item"><a href="archive-news.html">Новости</a></li>
+                <li class="menu-bottom__item menu-bottom__item--haschild">
+                    <a href="#">Помощь</a>
+                    <ul class="menu-show">
+                        <li class="menu-show__item"><a href="support.html">Поддержка</a></li>
+                        <li class="menu-show__item"><a href="document.html">Документы</a></li>
+                        <li class="menu-show__item"><a href="services.html">Сервисы</a></li>
+                    </ul>
+                </li>
+                <li class="menu-bottom__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="min-menu__wrap2">
+            <a class="min-menu__link min-menu__link--phone" href="tel:+74923256929">+7 (49232) 5-69-29</a>
+            <a class="min-menu__link min-menu__link--pay" href="#">Оплатить</a>
+            <a class="min-menu__link min-menu__link--lk" href="#">Личный кабинет</a>
+            <div class="min-soc">
+                <a href="#" class="min-soc__item">
+                    <svg  fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.998 23.4H14.807V13.91H17.992L18.473 10.218H14.807V7.85198C14.807 6.78598 15.106 6.05798 16.64 6.05798H18.603V2.74298C18.265 2.70398 17.108 2.59998 15.756 2.59998C12.922 2.59998 10.998 4.32898 10.998 7.48798V10.218H7.79999V13.91H10.998V23.4Z" fill="#222222"/>
+                    </svg>
+                </a>
+                <a href="#" class="min-soc__item">
+                    <svg  fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6137 6.70312C24.7945 6.13031 24.6137 5.71391 23.8139 5.71391H21.1545C20.4836 5.71391 20.1739 6.07852 19.9931 6.46852C19.9931 6.46852 18.625 9.79977 16.7146 11.9595C16.0951 12.5841 15.8113 12.7923 15.4756 12.7923C15.2948 12.7923 15.0622 12.5841 15.0622 12.0118V6.67621C15.0622 5.9998 14.8561 5.6875 14.2878 5.6875H10.1055C9.69211 5.6875 9.43414 5.9998 9.43414 6.31211C9.43414 6.96262 10.3893 7.11902 10.4924 8.94055V12.8984C10.4924 13.7571 10.3401 13.9141 10.0019 13.9141C9.09848 13.9141 6.90422 10.5569 5.58797 6.73156C5.33203 5.97391 5.07203 5.6875 4.4007 5.6875H1.7159C0.941484 5.6875 0.8125 6.0516 0.8125 6.44211C0.8125 7.14492 1.7159 10.6839 5.02023 15.3679C7.21449 18.5671 10.338 20.2866 13.1518 20.2866C14.8561 20.2866 15.0622 19.8961 15.0622 19.2456V16.8254C15.0622 16.0448 15.2171 15.9148 15.7595 15.9148C16.1464 15.9148 16.8436 16.1225 18.4184 17.6582C20.2252 19.4797 20.5349 20.3125 21.5419 20.3125H24.2008C24.9752 20.3125 25.3368 19.922 25.1301 19.1674C24.898 18.4128 24.02 17.32 22.8841 16.0189C22.2645 15.2907 21.3352 14.4838 21.0514 14.0933C20.6644 13.5728 20.7675 13.3646 21.0514 12.8964C21.0255 12.8964 24.2785 8.26414 24.6137 6.70109" fill="#222222"/>
+                    </svg>
+                </a>
+                <a href="#" class="min-soc__item">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 9.61547C11.1363 9.61547 9.61543 11.1364 9.61543 13C9.61543 14.8637 11.1363 16.3846 13 16.3846C14.8637 16.3846 16.3846 14.8637 16.3846 13C16.3846 11.1364 14.8637 9.61547 13 9.61547ZM23.1512 13C23.1512 11.5985 23.1639 10.2096 23.0852 8.81058C23.0064 7.18558 22.6357 5.74339 21.4475 4.55511C20.2566 3.36429 18.817 2.99613 17.192 2.91742C15.7904 2.83871 14.4016 2.8514 13.0025 2.8514C11.601 2.8514 10.2121 2.83871 8.81308 2.91742C7.18808 2.99613 5.7459 3.36683 4.55762 4.55511C3.3668 5.74593 2.99863 7.18558 2.91992 8.81058C2.84121 10.2121 2.8539 11.601 2.8539 13C2.8539 14.3991 2.84121 15.7905 2.91992 17.1895C2.99863 18.8145 3.36933 20.2567 4.55762 21.445C5.74844 22.6358 7.18808 23.0039 8.81308 23.0827C10.2146 23.1614 11.6035 23.1487 13.0025 23.1487C14.4041 23.1487 15.793 23.1614 17.192 23.0827C18.817 23.0039 20.2592 22.6332 21.4475 21.445C22.6383 20.2541 23.0064 18.8145 23.0852 17.1895C23.1664 15.7905 23.1512 14.4016 23.1512 13ZM13 18.2077C10.1182 18.2077 7.79238 15.8819 7.79238 13C7.79238 10.1182 10.1182 7.79242 13 7.79242C15.8818 7.79242 18.2076 10.1182 18.2076 13C18.2076 15.8819 15.8818 18.2077 13 18.2077ZM18.4209 8.79535C17.748 8.79535 17.2047 8.25199 17.2047 7.57914C17.2047 6.90629 17.748 6.36293 18.4209 6.36293C19.0937 6.36293 19.6371 6.90629 19.6371 7.57914C19.6373 7.73891 19.606 7.89715 19.5449 8.0448C19.4839 8.19245 19.3943 8.3266 19.2813 8.43958C19.1684 8.55255 19.0342 8.64213 18.8866 8.70318C18.7389 8.76423 18.5807 8.79555 18.4209 8.79535Z" fill="#222222"/>
+                    </svg>
+                </a>
+                <a href="#" class="min-soc__item">
+                    <svg  fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.3924 7.80328C23.269 7.34546 23.0279 6.92795 22.693 6.59229C22.3581 6.25664 21.9411 6.01454 21.4836 5.89011C19.7871 5.42428 13 5.4167 13 5.4167C13 5.4167 6.21399 5.40911 4.51641 5.85436C4.05916 5.98452 3.64305 6.23004 3.30802 6.56734C2.97299 6.90464 2.7303 7.32241 2.60324 7.78053C2.15582 9.47703 2.15149 12.9957 2.15149 12.9957C2.15149 12.9957 2.14716 16.5317 2.59132 18.2109C2.84049 19.1393 3.57174 19.8727 4.50124 20.1229C6.21507 20.5888 12.9837 20.5964 12.9837 20.5964C12.9837 20.5964 19.7708 20.6039 21.4673 20.1598C21.925 20.0356 22.3424 19.794 22.6781 19.4591C23.0138 19.1241 23.2563 18.7073 23.3816 18.2499C23.8301 16.5544 23.8333 13.0369 23.8333 13.0369C23.8333 13.0369 23.855 9.49978 23.3924 7.80328ZM10.829 16.2554L10.8344 9.75545L16.4753 13.0109L10.829 16.2554Z" fill="#222222"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="home">
+        <section class="firstscreen">
+                <div class="firstscreen__box">
+                    <div class="firstscreen__item" style="background: linear-gradient(180deg, rgba(34, 34, 34, 0.35) 0%, rgba(34, 34, 34, 0) 26.04%), linear-gradient(0deg, rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35)),url(img/firstscreen.jpg);">
+                        <div class="container">
+                            <h3 class="firstscreen__title">Весь год связь без хлопот!<h3>
+                            <div class="firstscreen__subtitle">65 Мбит/сек всего за 499 р.</div>
+                            <a href="" class="firstscreen__btn">Подключить</a>
+                            <div class="firstscreen__scrolldown">down</div>
+                        </div>
+                    </div>
+                    <div class="firstscreen__item" style="background: linear-gradient(180deg, rgba(34, 34, 34, 0.35) 0%, rgba(34, 34, 34, 0) 26.04%), linear-gradient(0deg, rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35)),url(img/firstscreen2.jpg);">
+                        <div class="container">
+                            <h3 class="firstscreen__title">Весь год связь без хлопот!<h3>
+                            <div class="firstscreen__subtitle">65 Мбит/сек всего за 499 р.</div>
+                            <a href="" class="firstscreen__btn">Подключить</a>
+                            <div class="firstscreen__scrolldown">down</div>
+                        </div>
+                    </div>
+                    <div class="firstscreen__item"  style="background: linear-gradient(180deg, rgba(34, 34, 34, 0.35) 0%, rgba(34, 34, 34, 0) 26.04%), linear-gradient(0deg, rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35)),url(img/firstscreen.jpg);">
+                        <div class="container">
+                            <h3 class="firstscreen__title">Весь год связь без хлопот!<h3>
+                            <div class="firstscreen__subtitle">65 Мбит/сек всего за 499 р.</div>
+                            <a href="" class="firstscreen__btn">Подключить</a>
+                            <div class="firstscreen__scrolldown">down</div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <div class="cards__flex">
+                    <div class="cards-options">
+                        <a href="#" class="cards-options__item active">Интернет + Телевидение</a>
+                        <a href="#" class="cards-options__item">Интернет</a>
+                        <a href="#" class="cards-options__item">Телевидение</a>
+                    </div>
+                    <div class="slide-control">
+                        <div class="slide-control__prew">prew</div>
+                        <div class="slide-control__next">next</div>
+                    </div>
+                </div>
+                <div class="cards__wrap active">
+                    <div class="card">
+                        <div class="card__item card__item--stick">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Для дома<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">10 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">65 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">Нету</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От <span>350</span> руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="detalies" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Для работы<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">20 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">85 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">Нету</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Максимум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">50 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">102 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">12 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__wrap">
+                    <div class="card">
+                        <div class="card__item card__item--stick">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Для дома<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">10 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">65 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">Нету</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От <span>350</span> руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="detalies" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Для работы<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">20 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">85 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">Нету</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Максимум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">50 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">102 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">12 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__wrap">
+                    <div class="card">
+                        <div class="card__item card__item--stick">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Для дома<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">10 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">65 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">Нету</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От <span>350</span> руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="detalies" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Для работы<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">20 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">85 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">Нету</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Максимум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">50 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">102 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">12 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                        <div class="card__item">
+                            <div class="stick card__stick">
+                                <div class="stick__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6531 7.27648H14.4082V4.2334C14.4082 2.73226 13.9592 1.64383 13.0703 0.990766C11.6735 -0.0341772 9.77778 0.541787 9.69615 0.568997L9.12472 0.750403V5.08147C9.12472 6.12909 8.55329 7.05879 7.42404 7.85244C7.05669 8.11095 6.96599 8.61888 7.22449 8.99077C7.48299 9.35811 7.99093 9.44882 8.36281 9.19031C9.93197 8.08827 10.7619 6.66877 10.7619 5.08147V2.02024C11.1701 1.98396 11.7098 2.01117 12.1088 2.30142C12.5533 2.62795 12.78 3.27648 12.78 4.22433V8.90006H18.6576C19.5873 8.90006 20.3447 9.63929 20.3719 10.5645L19.1519 18.2243L19.1474 18.2515C19.093 18.6778 18.9342 19.9794 16.9478 19.9794H7.80045C6.90249 19.9794 6.17234 19.2493 6.17234 18.3513V10.7776C6.17234 9.39439 5.04762 8.26514 3.65986 8.26514H2.51247C1.12925 8.26514 0 9.38986 0 10.7776V18.5463C0 19.9295 1.12472 21.0588 2.51247 21.0588C2.96145 21.0588 3.3288 20.6914 3.3288 20.2425C3.3288 19.7935 2.96145 19.4261 2.51247 19.4261C2.02721 19.4261 1.63265 19.0316 1.63265 18.5463V10.7776C1.63265 10.2924 2.02721 9.8978 2.51247 9.8978H3.65986C4.14512 9.8978 4.53968 10.2924 4.53968 10.7776V18.5463C4.53968 18.6098 4.54875 18.6778 4.56236 18.7368C4.75283 20.3558 6.13152 21.6166 7.80045 21.6166H16.9388C17.8639 21.6166 18.6893 21.3944 19.3152 20.9726C20.1224 20.4329 20.6213 19.5667 20.7574 18.4692L21.9864 10.764C21.9955 10.7187 22 10.6688 22 10.6234C22 8.77761 20.4989 7.27648 18.6531 7.27648Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="card__title">Премиум<h3>
+                            <div class="card-list">
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Интернет</div>
+                                    <div class="card-list__info">200 Мбит/с</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Телевидение</div>
+                                    <div class="card-list__info">237 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Премиум ТВ</div>
+                                    <div class="card-list__info">28 Каналов</div>
+                                </div>
+                                <div class="card-list__item">
+                                    <div class="card-list__name">Поддержка</div>
+                                    <div class="card-list__info">24 / 7</div>
+                                </div>
+                            </div>
+                            <div class="card__price">От 350 руб./мес.</div>
+                            <a href="#" class="card__btn">Подключить</a>
+                            <a href="#" class="card__details">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__wrap">
+                    <div class="advantages__left">
+                        <h1 class="advantages__title">Будь самым-самым<h3>
+                        <div class="advantages__subtitle">Миссия компании — обеспечивать жителей Коврова качественными универсальными и доступными телекоммуникациями, тем самым предоставляя возможность использовать новые технологии для развития, отдыха, развлечения и общения.</div>
+                    </div>
+                    <div class="advantages__right">
+                        <div class="advantages__list">
+                            <div class="advantages__item">
+                                <div class="advantages__icon"><img src="svg/Chat.svg" alt=""></div>
+                                <div class="advantages__text">Круглосуточная поддержка</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__icon"><img src="svg/TV.svg" alt=""></div>
+                                <div class="advantages__text">Бесплатное ТВ на ПК</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__icon"><img src="svg/Plug.svg" alt=""></div>
+                                <div class="advantages__text">Постоянно высокое качество связи</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__icon"><img src="svg/Edit.svg" alt=""></div>
+                                <div class="advantages__text">Прозрачные условия тарифов</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="connection">
+            <div class="container">
+                <div class="connection__flex">
+                    <div class="connection-go">
+                        <h3 class="connection-go__title">Премиальное телевидение<h3>
+                        <div class="connection-go__subtitle">Цифровое кабельное телевидение, HD и 4К качество, максимум телеканалов</div>
+                        <a href="#" class="connection-go__btn">Подробнее</a>
+                    </div>
+                    <div class="connection__forms">
+
+                        <div class="chance">
+                            <form action="" class="chance__form">
+                                <div class="chance__title">возможность подключения</div>
+                                <div class="chance__subtitle">Узнайте подключен ли ваш дом к нашей сети!</div>
+                                <div class="chance__flex">
+                                    <div class="select">
+                                        <input type="text" class="select__output" placeholder="Ваш адрес"></input>
+                                        <ul class="select__list">
+                                            <li class="select__item"><a href="#">ул. Петрова Клочова д.4/23</a></li>
+                                            <li class="select__item"><a href="#">ул. Мария Кудаловой д.4 к.1</a></li>
+                                            <li class="select__item"><a href="#">Всеволожский район, ул. Петра Крышкина Клочова д.9</a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="submit" class="chance__btn" value="Проверить">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="pay">
+                            <form action="" class="pay__form">
+                                <div class="pay__title">Моментальная оплата</div>
+                                <div class="pay__subtitle">Оплатите свои услуги в несколько кликов</div>
+                                <div class="pay__flex">
+                                    <input type="text" class="pay__input" placeholder="Номер договора">
+                                    <input type="text" class="pay__input" placeholder="Сумма">
+                                    <input type="submit" class="pay__btn" value="Проверить">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__title">НОВОСТИ</div>
+                <div class="news__flex">
+                    <div class="news__item">
+                        <div class="news__img"><img src="img/news1.jpg" alt=""></div>
+                        <a href="#" class="news__text">График работы офиса и службы техподдержки в новогодние праздники 2020 года</a>
+                        <div class="news__date">25 декабря 2019</div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__img"><img src="img/news2.jpg" alt=""></div>
+                        <a href="#" class="news__text">Изменения в сетке вещания телеканалов</a>
+                        <div class="news__date">23 января 2019</div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__img"><img src="img/news3.jpg" alt=""></div>
+                        <a href="#" class="news__text">Новые тарифы для любителей онлайн игры</a>
+                        <div class="news__date">25 декабря 2019</div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__img"><img src="img/news4.jpg" alt=""></div>
+                        <a href="#" class="news__text">Мы добавили еще 10 новых познавательных каналов</a>
+                        <div class="news__date">23 января 2019</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top__flex">
+                    <div class="footer-top__info">
+                        <div class="footer-top__question">Как с нами связаться?</div>
+                        <div class="footer-top__timework">Пон. - Пят. с 9:00 до 19:00</div>
+                        <a class="footer-top__phone" href="tel: +74923256929">+7 (49232) 5-69-29</a>
+                    </div>
+                    <div class="soc footer-top__soc">
+                        <a href="facebook" class="soc__item"><img src="svg/Vector.svg" alt=""></a>
+                        <a href="vk" class="soc__item"><img src="svg/VK.svg" alt=""></a>
+                        <a href="inst" class="soc__item"><img src="svg/Instagram.svg" alt=""></a>
+                        <a href="youtube" class="soc__item"><img src="svg/Youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom__box">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__box">
+                            <li class="footer-nav__item"><a href="#">акции</a></li>
+                            <li class="footer-nav__item"><a href="#">почему мы?</a></li>
+                            <li class="footer-nav__item"><a href="#">новости</a></li>
+                            <li class="footer-nav__item"><a href="#">помощь</a></li>
+                            <li class="footer-nav__item"><a href="#">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-bottom__flex">
+                        <div class="footer-bottom__colmn">
+                            <div class="copyright">
+                                © 2000—2019 «КовровТелеком». Все права сохранены. <br> Лицензии № 42853, 42854, 85903, 85904, 86727, 141478, 141479, 141480, 157084, 157085 Услуги сертифицированы.
+                            </div>
+                        </div>
+                        <div class="footer-bottom__colmn">
+                            <a href="#" class="political">Политика конфиденциальности</a>
+                            <a href="#" class="conditions">Условия оказания услуг</a>
+                        </div>
+                        <div class="footer-bottom__colmn">
+                            <a href="#" class="creator">
+                                <img src="svg/creator.svg" alt="creator">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="pop-cam">
+        <div class="pop-cam__box">
+            <div class="pop-cam__close">close</div>
+            <div class="pop-cam__title">Что делать, если нет поддержки CAM-модуля?</div>
+            <img src="img/cam.png" alt="" class="pop-cam__img">
+            <div class="pop-cam__text">Ваш делевизор не поддерживает CAM-модуль, то не стоит переживать. Мы можем подключить ТВ приставку к вашему телевизору и все заработает.</div>
+        </div>
+    </div>
+    <div class="pop-chanel">
+        <div class="chaneel-info">
+            <div class="chaneel-info__title">Discovery Channel</div>
+            <div class="chaneel-info__subtitle">Премиальное телевидение очень легко подключить и просто настроить. Все что нужно — это вставить CAM-модуль с картой доступа в телевизор.</div>
+            <div class="chaneel-info__list">
+                <div class="chaneel-info__item">
+                    <div class="chaneel-info__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"><script xmlns=""/><path d="M12.848 9.883a.86.86 0 1 0 0-1.719.86.86 0 0 0 0 1.719zM12.848 13.621a.86.86 0 1 0 0-1.719.86.86 0 0 0 0 1.72zM16.586 9.883a.86.86 0 1 0 0-1.719.86.86 0 0 0 0 1.719z" fill="#222"/><path d="M21.14 10.742a.86.86 0 0 0 .86-.86V5.157a3.441 3.441 0 0 0-3.438-3.437h-1.117v-.86a.86.86 0 0 0-1.719 0v.86h-3.91v-.86a.86.86 0 0 0-1.718 0v.86H6.23v-.86a.86.86 0 1 0-1.718 0v.86H3.437A3.441 3.441 0 0 0 0 5.156v13.407A3.441 3.441 0 0 0 3.437 22h10.829c.029 0 .058-.002.086-.004a.863.863 0 0 0 .704-.26l6.704-6.96a.86.86 0 0 0-.62-1.456h-4.124a3.441 3.441 0 0 0-3.438 3.438v3.523H3.438a1.72 1.72 0 0 1-1.72-1.718V5.155a1.72 1.72 0 0 1 1.72-1.719h1.074v.86a.86.86 0 1 0 1.718 0v-.86h3.868v.86a.86.86 0 0 0 1.718 0v-.86h3.91v.86a.86.86 0 0 0 1.72 0v-.86h1.116a1.72 1.72 0 0 1 1.72 1.72v4.726c0 .474.384.86.859.86zm-5.843 6.016a1.72 1.72 0 0 1 1.719-1.719h2.104l-3.823 3.97v-2.251z" fill="#222"/><path d="M5.371 9.883a.86.86 0 1 0 0-1.719.86.86 0 0 0 0 1.719zM9.11 13.621a.86.86 0 1 0 0-1.719.86.86 0 0 0 0 1.72zM5.371 17.36a.86.86 0 1 0 0-1.72.86.86 0 0 0 0 1.72zM5.371 13.621a.86.86 0 1 0 0-1.719.86.86 0 0 0 0 1.72zM9.11 17.36a.86.86 0 1 0 0-1.72.86.86 0 0 0 0 1.72zM9.11 9.883a.86.86 0 1 0 0-1.719.86.86 0 0 0 0 1.719z" fill="#222"/></svg></div>
+                    <div class="chaneel-info__text">ежедневно, круглосуточно</div>
+                </div>
+                <div class="chaneel-info__item">
+                    <div class="chaneel-info__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"><script xmlns=""/><g clip-path="url(#clip0)" fill="#222"><path d="M12.503 20.124c-.22.035-.443.062-.667.082V16.91c.173.005.346.011.517.019a.858.858 0 1 0 .081-1.713c-.197-.01-.397-.017-.598-.022v-3.358h3.326c-.018.417-.05.83-.094 1.236a.858.858 0 1 0 1.705.188c.052-.468.087-.944.106-1.424h3.366a8.798 8.798 0 0 1-.025.243.858.858 0 0 0 1.704.201c.05-.43.076-.867.076-1.301 0-2.933-1.142-5.69-3.215-7.764A10.907 10.907 0 0 0 11.02 0h-.043C8.046 0 5.29 1.142 3.216 3.215A10.907 10.907 0 0 0 0 10.98c0 2.932 1.142 5.689 3.215 7.763a10.907 10.907 0 0 0 7.764 3.215l.021-.001.021.001c.588 0 1.179-.047 1.755-.14a.858.858 0 0 0-.273-1.693zM1.756 11.836h3.322c.054 1.35.236 2.652.534 3.85-.807.163-1.554.364-2.221.6a9.208 9.208 0 0 1-1.635-4.45zm16.821-6.21a9.207 9.207 0 0 1 1.667 4.495H16.88a19.222 19.222 0 0 0-.543-3.889 16.639 16.639 0 0 0 2.241-.607zm-2.755-1.043a12.22 12.22 0 0 0-.498-1.144 9.854 9.854 0 0 0-.518-.914 9.29 9.29 0 0 1 2.542 1.694c-.473.138-.984.26-1.526.364zm-5.701 2.138v3.4H6.795c.055-1.279.234-2.502.525-3.612.893.113 1.834.185 2.8.212zM7.876 4.846c.092-.221.189-.435.291-.64.565-1.129 1.248-1.914 1.954-2.272v3.07a27.381 27.381 0 0 1-2.245-.158zm3.96-2.912c.707.358 1.39 1.143 1.954 2.272.103.205.2.419.292.64-.723.082-1.476.136-2.246.159v-3.07zM6.633 3.44c-.18.361-.347.744-.498 1.144-.53-.103-1.03-.22-1.493-.355a9.297 9.297 0 0 1 2.491-1.676c-.175.275-.342.57-.5.887zM5.622 6.232a19.215 19.215 0 0 0-.544 3.889H1.756a9.208 9.208 0 0 1 1.659-4.484 16.72 16.72 0 0 0 2.207.595zm.497 11.1c.155.415.327.812.514 1.187.158.316.325.611.5.886a9.296 9.296 0 0 1-2.527-1.71c.47-.138.976-.26 1.513-.364zm4.002 2.69c-.706-.357-1.39-1.142-1.954-2.27a10.33 10.33 0 0 1-.31-.684 27.248 27.248 0 0 1 2.264-.159v3.114zm0-4.829c-.969.027-1.914.1-2.812.215-.284-1.1-.46-2.309-.514-3.572h3.326v3.357zm1.715-8.472a28.645 28.645 0 0 0 2.801-.212c.291 1.11.47 2.333.525 3.612h-3.326v-3.4z"/><circle cx="18" cy="18" r="2"/></g><defs><clipPath id="clip0"><path d="M0 0h22v22H0V0z" fill="#fff"/></clipPath></defs></svg></div>
+                    <div class="chaneel-info__text">РУС</div>
+                </div>
+                <div class="chaneel-info__item">
+                    <div class="chaneel-info__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"><script xmlns=""/><path d="M17.703 10.742a.86.86 0 0 0 .86-.86V6.444a.86.86 0 0 0-.86-.86H4.297a.86.86 0 0 0-.86.86v9.11c0 .474.385.859.86.859h13.406a.86.86 0 0 0 .86-.86v-1.33a.86.86 0 1 0-1.72 0v.471H5.157v-7.39h11.688v2.58c0 .475.384.86.86.86z" fill="#222"/><path d="M5.156 18.133H3.438a1.72 1.72 0 0 1-1.72-1.719V5.586a1.72 1.72 0 0 1 1.72-1.719h1.718a.86.86 0 1 0 0-1.719H3.438A3.441 3.441 0 0 0 0 5.586v10.828a3.441 3.441 0 0 0 3.438 3.438h1.718a.86.86 0 0 0 0-1.72zM18.563 2.148h-1.72a.86.86 0 1 0 0 1.72h1.72a1.72 1.72 0 0 1 1.718 1.718v10.828a1.72 1.72 0 0 1-1.718 1.719h-1.72a.86.86 0 1 0 0 1.719h1.72A3.441 3.441 0 0 0 22 16.414V5.586a3.441 3.441 0 0 0-3.438-3.438z" fill="#222"/></svg></div>
+                    <div class="chaneel-info__text">SD 16:9</div>
+                </div>
+                <div class="chaneel-info__item">
+                    <div class="chaneel-info__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"><script xmlns=""/><path d="M16.8 16.2V1.933A1.936 1.936 0 0 0 14.868 0H7.133a1.936 1.936 0 0 0-1.934 1.934v14.265C5.2 19.398 7.801 22 11 22c3.199 0 5.8-2.602 5.8-5.8zm-10.312 0V1.933c0-.356.29-.645.645-.645h7.734c.356 0 .645.29.645.645v14.265A4.517 4.517 0 0 1 11 20.711a4.517 4.517 0 0 1-4.512-4.512z" fill="#222"/><path d="M14.223 16.2A3.226 3.226 0 0 0 11 12.976a3.226 3.226 0 0 0-3.223 3.222A3.226 3.226 0 0 0 11 19.422a3.226 3.226 0 0 0 3.223-3.223zm-5.157 0c0-1.067.868-1.934 1.934-1.934 1.066 0 1.934.867 1.934 1.933A1.936 1.936 0 0 1 11 18.133a1.936 1.936 0 0 1-1.934-1.934zM8.422 9.066H9.71a.645.645 0 0 0 0-1.289H8.42a.645.645 0 0 0 0 1.29zM12.29 9.066h1.288a.645.645 0 1 0 0-1.289H12.29a.645.645 0 1 0 0 1.29zM8.422 6.488H9.71a.645.645 0 0 0 0-1.289H8.42a.645.645 0 0 0 0 1.29zM12.29 6.488h1.288a.645.645 0 1 0 0-1.289H12.29a.645.645 0 1 0 0 1.29zM12.29 11.645h1.288a.645.645 0 1 0 0-1.29H12.29a.645.645 0 1 0 0 1.29zM8.422 11.645H9.71a.645.645 0 1 0 0-1.29H8.42a.644.644 0 1 0 0 1.29z" fill="#222"/><path d="M11 16.844a.645.645 0 1 0 0-1.29.645.645 0 0 0 0 1.29zM8.422 3.91a.645.645 0 1 0 0-1.289.645.645 0 0 0 0 1.29zM13.578 3.91a.645.645 0 1 0 0-1.289.645.645 0 0 0 0 1.29z" fill="#222"/></svg></div>
+                    <div class="chaneel-info__text">Кнопка:88</div>
+                </div>
+                <div class="chaneel-info__item">
+                    <div class="chaneel-info__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"><script xmlns=""/><path d="M11 0C4.943 0 0 4.944 0 11c0 6.057 4.944 11 11 11 6.057 0 11-4.944 11-11 0-6.057-4.944-11-11-11zm0 20.71c-5.355 0-9.71-4.355-9.71-9.71S5.644 1.29 11 1.29s9.71 4.355 9.71 9.71-4.355 9.71-9.71 9.71z" fill="#222"/><path d="M16.514 10.464L8.779 5.307a.644.644 0 0 0-1.002.537v10.312a.645.645 0 0 0 1.002.537l7.735-5.157a.645.645 0 0 0 0-1.072zm-7.448 4.488V7.048L14.994 11l-5.928 3.952z" fill="#222"/></svg></div>
+                    
+                    <a  class="chaneel-info__text" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">Промо видео канала</a>
+                </div>
+                <div class="chaneel-info__item">
+                    <div class="chaneel-info__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"><script xmlns=""/><path d="M14.61 5.285h-3.653a.86.86 0 0 0 0 1.719h2.867l-5.22 5.22a3.416 3.416 0 0 0-1.772-.494H3.438A3.441 3.441 0 0 0 0 15.168v3.395A3.441 3.441 0 0 0 3.438 22h3.394a3.441 3.441 0 0 0 3.438-3.438v-3.394c0-.625-.17-1.212-.462-1.717l5.231-5.232v2.867a.86.86 0 1 0 1.719 0V7.434a2.15 2.15 0 0 0-2.149-2.149zM8.55 18.562a1.72 1.72 0 0 1-1.718 1.72H3.438a1.72 1.72 0 0 1-1.72-1.72v-3.394a1.72 1.72 0 0 1 1.72-1.719h3.394a1.72 1.72 0 0 1 1.719 1.719v3.395zM8.68.86a.86.86 0 1 1 1.718 0 .86.86 0 0 1-1.718 0zM5.5.86a.86.86 0 1 1 1.719 0A.86.86 0 0 1 5.5.86zm-3.18 0a.86.86 0 1 1 1.719 0 .86.86 0 0 1-1.719 0zM0 2.922a.86.86 0 1 1 1.719 0 .86.86 0 0 1-1.719 0zM22 18.82a.86.86 0 1 1-1.719 0 .86.86 0 0 1 1.719 0zm-2.063 2.32a.86.86 0 1 1-1.718 0 .86.86 0 0 1 1.718 0zm.344-17.96a.86.86 0 1 1 1.719 0 .86.86 0 0 1-1.719 0zM11.86.86a.86.86 0 1 1 1.72 0 .86.86 0 0 1-1.72 0zm4.899 0a.86.86 0 1 1-1.719 0 .86.86 0 0 1 1.719 0zm-3.18 20.28a.86.86 0 1 1-1.718 0 .86.86 0 0 1 1.718 0zm3.18 0a.86.86 0 1 1-1.719 0 .86.86 0 0 1 1.719 0zM22 9.41a.86.86 0 1 1-1.719 0 .86.86 0 0 1 1.719 0zm0-3.18a.86.86 0 1 1-1.719 0 .86.86 0 0 1 1.719 0zm-22 0a.86.86 0 1 1 1.719 0A.86.86 0 0 1 0 6.23zm22 6.36a.86.86 0 1 1-1.719 0 .86.86 0 0 1 1.719 0zm0 3.18a.86.86 0 1 1-1.719 0 .86.86 0 0 1 1.719 0zM0 9.41a.86.86 0 1 1 1.719 0A.86.86 0 0 1 0 9.41zM19.938.86a.86.86 0 1 1-1.72 0 .86.86 0 0 1 1.72 0z" fill="#222"/></svg></div>
+                    <a target="_blank" href="www.discoverychannel.com" class="chaneel-info__text">www.discoverychannel.com</a>
+                </div>
+            </div>
+            <div class="chaneel-info__close">×</div>
+        </div>
+    </div>
+    <div class="popup-box">
+        <div class="popup-pay">
+            <div class="popup-pay__left">
+                <div class="popup-pay__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.7944549784243!2d41.30709111610526!3d56.331572654671675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414c4841887176f7%3A0xfd17a15470a2897b!2z0YPQuy4g0JXQu9C-0LLQsNGPLCDQmtC-0LLRgNC-0LIsINCS0LvQsNC00LjQvNC40YDRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8!5e1!3m2!1sru!2sua!4v1581691887414!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="popup-pay__bold">Пункты оплаты наличными</div>
+            </div>
+            <form class="popup-pay__form">
+                <div class="popup-pay__title">Пополнить счет</div>
+                <div class="popup-pay__flex">
+                    <input type="text" class="popup-pay__input popup-pay__input--login" placeholder="Логин или ID-номер">
+                    <input type="text" class="popup-pay__input popup-pay__input--price" placeholder="Сумма">
+                </div>
+                <input type="submit" class="popup-pay__btn" value="Пополнить">
+                <div class="popup-pay__text">* При оплате заказа банковской картой, обработка платежа (включая ввод номера карты) происходит на защищенной странице процессинговой системы, которая прошла международную сертификацию. Это значит, что Ваши конфиденциальные данные (реквизиты карты, регистрационные данные и др.) не поступают в интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные клиента. При работе с карточными данными применяется стандарт защиты информации, разработанный международными платёжными системами Visa и MasterCard - Payment Card Industry Data Security Standard (PCI DSS), что обеспечивает безопасную обработку реквизитов Банковской карты Держателя. Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путем использования протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских сетей, имеющих высшую степень защиты.</div>
+            </form>
+            <div class="popup-box__close">×</div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script type="text/javascript" src="libs/mask/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.min.css">
+    <script type="text/javascript" src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+    
