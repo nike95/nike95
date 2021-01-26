@@ -1,0 +1,29 @@
+/*ADAPTIVE*/
+
+@mixin hg-max{
+  @media(max-width: 1160px) { @content }
+}
+
+@mixin lg-max{
+  @media(max-width: 992px) { @content }
+}
+
+@mixin md-max{
+  @media(max-width: 760px) { @content }
+}
+
+@mixin sm-max{
+  @media(max-width: 620px) { @content }
+}
+
+@mixin xs-max{
+  @media(max-width: 479px) { @content }
+}
+
+@mixin xsm-max{
+  @media(max-width: 375px) { @content }
+}
+
+@include sm-max {
+    
+} 
