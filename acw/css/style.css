@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-size: cover;
   font-size: 0;
-  background-image: url(/img/burgerimg.png);
+  background-image: url(img/burgerimg.png);
 }
 
 .leaf {
