@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-size: cover;
   font-size: 0;
-  background-image: url(/img/burgerimg.png);
+  background-image: url(/acw/img/burgerimg.png);
 }
 
 .leaf {
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   width: 20px;
   height: 20px;
-  background-image: url("/img/leaf.png");
+  background-image: url("/acw/img/leaf.png");
   top: 50%;
   margin-top: -10px;
   right: -25px;
@@ -636,7 +636,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*footer*/
 .footer {
-  background-image: url(/img/footerbg.jpg);
+  background-image: url(/acw/img/footerbg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -779,7 +779,7 @@ h1, h2, h3, h4, h5, h6 {
 .firstscreen {
   height: 100vh;
   min-height: 700px;
-  background-image: url(/img/fbg.jpg);
+  background-image: url(/acw/img/fbg.jpg);
   background-position: center;
   background-size: cover;
   padding-top: 200px;
@@ -1241,7 +1241,7 @@ h1, h2, h3, h4, h5, h6 {
 /*branding*/
 .branding {
   padding: 105px 0;
-  background-image: url("/img/brandingbg.jpg");
+  background-image: url("/acw/img/brandingbg.jpg");
   background-position: center;
   background-size: cover;
 }
