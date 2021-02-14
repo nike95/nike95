@@ -1,0 +1,22 @@
+@mixin lb-max{
+   @media(max-width: 1399px) { @content }
+}
+@mixin lg-max{
+   @media(max-width: 1200px) { @content }
+}
+@mixin md-max{
+   @media(max-width: 992px) { @content }
+}
+@mixin sm-max{
+   @media(max-width: 768px) { @content }
+}
+@mixin sx-max{
+   @media(max-width: 576px) { @content }
+}
+@mixin xs-max{
+   @media(max-width: 478px) { @content }
+}
+
+@include sx-max {
+   
+}

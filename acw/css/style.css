@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-size: cover;
   font-size: 0;
-  background-image: url("/acw/img/burgerimg.png");
+  background-image: url("/img/burgerimg.png");
 }
 
 .leaf {
@@ -669,6 +669,12 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 50;
 }
 
+@media (max-width: 576px) {
+  .header {
+    padding-top: 22px;
+  }
+}
+
 .header__colmn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -794,7 +800,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .min-menu {
   width: 100%;
-  min-height: 480px;
+  min-height: 100vh;
   opacity: 0;
   position: absolute;
   left: -100vw;
@@ -975,9 +981,43 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #D36C20;
 }
 
+.min-menu__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.min-menu__close {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.min-menu__close > svg path {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.min-menu__close:hover > svg path {
+  fill: #D36C20;
+}
+
 /*footer*/
 .footer {
-  background-image: url("/acw/img/footerbg.jpg");
+  background-image: url("/img/footerbg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1127,6 +1167,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  .firstscreen {
+    padding-top: 120px;
+  }
+}
+
 @media (max-width: 478px) {
   .firstscreen {
     background-image: url("/acw/img/fsbgmin.jpg");
@@ -1184,6 +1230,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .firstscreen__subtitle {
+    max-width: 287px;
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 40px;
@@ -1532,7 +1579,7 @@ h1, h2, h3, h4, h5, h6 {
 /*branding*/
 .branding {
   padding: 105px 0;
-  background-image: url("/acw//img/brandingbg.jpg");
+  background-image: url("/acw/img/brandingbg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2084,7 +2131,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   width: 20px;
   height: 20px;
-  background: #fff url("/acw//img/leaf.png");
+  background: #fff url("/acw/img/leaf.png");
   top: 50%;
   margin-top: -10px;
   right: 50%;

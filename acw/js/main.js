@@ -12,6 +12,9 @@ $(function(){
 	$('.burger').click(function(){
 		$(".min-menu").addClass("active");
 	});
+	$('.min-menu__close').click(function(){
+		$(".min-menu").removeClass("active");
+	});
 	$('.mysocial')
       .on('click', function(e) {
         $('.fab')
