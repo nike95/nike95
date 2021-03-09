@@ -1,0 +1,11 @@
+/*fonts*/
+@font-face {
+    font-family: 'museo';
+    src: url('/fonts/museo/MuseoSansCyrl-700.eot.eot');
+    src: local('Museo-Bold'), local('Museo-Bold'),
+        url('/fonts/museo/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/museo/MuseoSansCyrl-700.woff') format('woff'),
+        url('/fonts/museo/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
