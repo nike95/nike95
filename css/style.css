@@ -321,6 +321,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FAFAFA;
   border-radius: 100%;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .info__contactbox {
