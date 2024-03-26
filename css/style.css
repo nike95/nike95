@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .info__contactbox > span > svg {
