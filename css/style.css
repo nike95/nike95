@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   position: relative;
   padding: 0 10px;
-  width: 625px;
+  width: 768px;
 }
 
 @media (max-width: 626px) {
