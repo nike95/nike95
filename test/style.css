@@ -59,6 +59,10 @@ ul {
     }
 }
 
+.header {
+    padding: 20px 0;
+}
+
 .header__flex {
     display: flex;
     align-items: center;
@@ -72,4 +76,14 @@ ul {
 .header__logo img {
     width: 100%;
     height: inherit;
+}
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav ul li{
+    margin: 0 10px;
 }
