@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="content">
+    <header class="header">
+        <div class="container">
+            <div class="header__flex">
+                <div class="header__logo">
+                    <div class="header__logo-link">
+                        <img width="180px" height="60px" src="img/logo.svg" alt="logo">
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a class="header__nav-video" href="#youtube">Video</a></li>
+                        <li><a class="header__nav-text" href="#text">Text</a></li>
+                        <li><a class="header__nav-slider" href="#slider">Slider</a></li>
+                    </ul>
+                </nav>
+                <select id="langSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="ua">Ukraine</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <section id="youtube" class="video-form">
+            <div class="container">
+                <div class="video-form__flex">
+                    <div class="video-form__left">
+                        <h1 class="video-form__title">Video</h1>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3uI2KWRZBXM?si=eh0dbMksBnRBEB9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-form__right">
+                        <form id="registrationForm" class="video-form__form">
+                            <input class="video-form__input" required type="text" placeholder="Name" name="firstName">
+                            <input class="video-form__input" required type="text" placeholder="Lastname" name="lastName">
+                            <input class="video-form__input" required type="text" placeholder="Phone" name="phone">
+                            <input class="video-form__input" required type="text" placeholder="Email" name="email">
+                            <button type="submit" class="video-form__btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="text" class="text">
+            <div class="container">
+                <h2 class="text__title">Text</h2>
+                <div class="text__info">
+                    <p>Hi, this is a test text to demonstrate the language change</p>
+                </div>
+            </div>
+        </section>
+        <section id="slider" class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img width="400px" height="400px" src="img/slide_one.webp" alt="slider"></div>
+                    <div class="swiper-slide"><img width="400px" height="400px" src="img/slide_two.webp" alt="slider"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__text">Liashenko Mykola</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function changeLanguage() {
+        const langSelect = document.getElementById('langSelect');
+        const selectedLang = langSelect.value;
+
+        const titleElement = document.querySelector('.text__title');
+        const infoElement = document.querySelector('.text__info');
+        const titleVideo = document.querySelector('.video-form__title');
+        const navVideo = document.querySelector('.header__nav-video');
+        const navText = document.querySelector('.header__nav-text');
+        const navSlider = document.querySelector('.header__nav-slider');
+        const footerText = document.querySelector('.footer__text');
+
+
+        switch (selectedLang) {
+            case 'en':
+                titleElement.textContent = 'Text';
+                titleVideo.textContent = 'Video';
+                navVideo.textContent = 'Video';
+                navText.textContent = 'Text';
+                navSlider.textContent = 'Slider';
+                footerText.textContent = 'Liashenko Mykola';
+                infoElement.innerHTML = `
+                <p>Hi, this is a test text to demonstrate the language change</p>
+            `;
+                break;
+            case 'ua':
+                titleElement.textContent = 'Текст';
+                titleVideo.textContent = 'Відео';
+                navVideo.textContent = 'Відео';
+                navText.textContent = 'Текст';
+                navSlider.textContent = 'Слайдер';
+                footerText.textContent = 'Ляшенко Микола';
+                infoElement.innerHTML = `
+                <p>Привіт, це тестовий текст, для демонстрації зміни мови.</p>
+            `;
+        }
+    }
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</html>
